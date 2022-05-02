@@ -1,0 +1,66 @@
+.gear {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-outline-success {
+    background-color: green;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #d2d4d5;
+}
+
+.navbar-light1 {
+    text-align: center;
+    background-color: white;
+}
+
+.btn-primary-1 {
+    background-color: rgb(196, 192, 192);
+}
+
+.grid1 {
+    width: 30px;
+    height: 30px;
+}
+
+.fotos-principales {
+    width: 500px;
+    height: 380px;
+}
+
+.img1 {
+    width: 30px;
+    height: 30px;
+}
+.nav-pills {
+    justify-content: center;
+}
+.imgg1{
+    width: 20px;
+    height: 20px;
+}
+.nav-pills .nav-link.active{
+    background-color: grey;
+}
+.nav-link{
+    color:grey;
+}
+.imgg2{
+    width: 20px;
+    height: 20px;
+}
+
+.fondo {
+    background-color: rgb(196, 190, 190);
+    padding: 10px;
+}
+
+.carta{
+    margin: auto;
+    width: 12cm;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
