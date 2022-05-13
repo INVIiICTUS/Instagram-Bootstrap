@@ -7,311 +7,313 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet" href="/style.css">
+
   <script src="https://kit.fontawesome.com/816d873258.js" crossorigin="anonymous"></script>
   <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
   <!-- navbar fija -->
-  <nav class="navbar navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand col-8" href="#">
-        <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="" width="30" height="24"
-          class="d-inline-block align-text-top img1">
-        Instagram
-      </a>
-      <button type="button" class="btn btn-primary" style="background-color: rgb(52, 135, 52);" data-bs-toggle="modal"
-        data-bs-target="#exampleModal">
-        Create new post
+  <nav class=" navbar navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand col-8" href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="" width="30" height="24"
+        class="d-inline-block align-text-top img1">
+      Instagram
+    </a>
+    <button type="button" class="btn btn-primary" style="background-color: rgb(52, 135, 52);" data-bs-toggle="modal"
+      data-bs-target="#exampleModal">
+      Create new post
+    </button>
+    <div class="dropdown col-1">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <img src="https://www.pngmart.com/files/5/Gears-PNG-File.png" class="gear">
       </button>
-      <div class="dropdown col-1">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-          aria-expanded="false">
-          <img src="https://www.pngmart.com/files/5/Gears-PNG-File.png" class="gear">
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <li><button class="dropdown-item" type="button">Action</button></li>
-          <li><button class="dropdown-item" type="button">Another action</button></li>
-          <li><button class="dropdown-item" type="button">Something else here</button></li>
-          <li><button class="dropdown-item" type="button">Cerrar sesion</button></li>
-        </ul>
-      </div>
-  </nav>
-  <!-- navbar fija -->
-  <!-- boton modal "pop up" -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel"></h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <input class="form-control">
-            </div>
-          </form>
-          <div class="container">
-            <div class="row">
-              <i class="fa-solid fa-camera col-1 px-0"></i>
-              <i class="fa-solid fa-location-dot col-1 px-0"></i>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <li><button class="dropdown-item" type="button">Action</button></li>
+        <li><button class="dropdown-item" type="button">Another action</button></li>
+        <li><button class="dropdown-item" type="button">Something else here</button></li>
+        <li><button class="dropdown-item" type="button">Cerrar sesion</button></li>
+      </ul>
+    </div>
+    </nav>
+    <!-- navbar fija -->
+    <!-- boton modal "pop up" -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <input class="form-control">
+              </div>
+            </form>
+            <div class="container">
+              <div class="row">
+                <i class="fa-solid fa-camera col-1 px-0"></i>
+                <i class="fa-solid fa-location-dot col-1 px-0"></i>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary" style="background-color: rgb(72, 194, 72);">Publicar</button>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary" style="background-color: rgb(72, 194, 72);">Publicar</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- boton modal "pop up" -->
-  <!-- grid "mosaico 9 fotos" -->
-  <div class="row">
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-          type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
-            class="fa-solid fa-border-all"></i></button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-          type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
-            class="fa-solid fa-grip-lines"></i></button>
-      </li>
-    </ul>
-    <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-        <div class="row">
-          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 px-1">
-            <img src="https://blog.portfolionatural.com/wp-content/uploads/sites/210/2016/06/EIGG-vermell-Portfolio.jpg"
-              class="w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
-            <img src="https://m1.paperblog.com/i/265/2652948/caracoles-que-fotos-tan-chulas-L-5I4aEG.jpeg"
-              class="w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
-            <img src="http://misimagenesde.com/wp-content/uploads/2017/06/fotos-chulas-3.jpg"
-              class="w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
-          </div>
-          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 px-1">
-            <img src="http://28.media.tumblr.com/tumblr_kzkyi6ZVxz1qzwtdlo1_r1_500.png"
-              class="w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
-            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/dd/50/fc/caption.jpg?w=500&h=400&s=1"
-              class="w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
-            <img src="https://i.blogs.es/d268ef/tamanoimageniv/450_1000.jpg""
+    <!-- boton modal "pop up" -->
+    <!-- grid "mosaico 9 fotos" -->
+    <div class="row">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+              class="fa-solid fa-border-all"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+              class="fa-solid fa-grip-lines"></i></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 px-1">
+              <img
+                src="https://blog.portfolionatural.com/wp-content/uploads/sites/210/2016/06/EIGG-vermell-Portfolio.jpg"
+                class="w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
+              <img src="https://m1.paperblog.com/i/265/2652948/caracoles-que-fotos-tan-chulas-L-5I4aEG.jpeg"
+                class="w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
+              <img src="http://misimagenesde.com/wp-content/uploads/2017/06/fotos-chulas-3.jpg"
+                class="w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 px-1">
+              <img src="http://28.media.tumblr.com/tumblr_kzkyi6ZVxz1qzwtdlo1_r1_500.png"
+                class="w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/dd/50/fc/caption.jpg?w=500&h=400&s=1"
+                class="w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
+              <img src="https://i.blogs.es/d268ef/tamanoimageniv/450_1000.jpg""
             class=" w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
-          </div>
-          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 px-1">
-            <img
-              src="https://cdn.slidesharecdn.com/ss_thumbnails/fotoschulas-100114072840-phpapp02-thumbnail-4.jpg?cb=1263454793"
-              class="w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
-            <img
-              src="https://www.theimagen.com/wp-content/uploads/2020/03/the-imagen-reto-49-dia-nublado-santiago-caceres-rojo.jpg"
-              class="w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
-            <img src="https://www.phototourbarcelona.com/wp-content/uploads/2019/10/7.jpg"
-              class="w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
-          </div>
-        </div>
-      </div>
-      <!-- grid "mosaico 9 fotos" -->
-      <!-- grid con muro -->
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-        <div class="fondo">
-          <div class="card carta">
-            <div class="card-header">
-              <h4 class="titulo">Primera Foto</h4>
-              <button type="button" class="btn btn-link">12/14</button>
             </div>
-            <img src="https://blog.portfolionatural.com/wp-content/uploads/sites/210/2016/06/EIGG-vermell-Portfolio.jpg"
-              class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">2253 Likes</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
-                interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="far fa-heart"></i>
-              </button>
-              <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </div>
-          </div>
-          <div class="card carta">
-            <div class="card-header">
-              <h4 class="titulo">Segunda Foto</h4>
-              <button type="button" class="btn btn-link">12/14</button>
-            </div>
-            <img src="http://28.media.tumblr.com/tumblr_kzkyi6ZVxz1qzwtdlo1_r1_500.png" class="card-img-top"
-              alt="Imagen carta">
-
-            <div class="card-body">
-              <h5 class="card-title">6122 Likes</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
-                interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="far fa-heart"></i>
-              </button>
-              <input type="text" class="form-control comentario" id="recipient-name"
-                placeholder="Escriba un comentario...">
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </div>
-          </div>
-          <div class="card carta">
-            <div class="card-header">
-              <h4 class="titulo">Tercera Foto</h4>
-              <button type="button" class="btn btn-link">12/14</button>
-            </div>
-            <img
-              src="https://cdn.slidesharecdn.com/ss_thumbnails/fotoschulas-100114072840-phpapp02-thumbnail-4.jpg?cb=1263454793"
-              class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">2727 Likes</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
-                interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="far fa-heart"></i>
-              </button>
-              <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </div>
-          </div>
-          <div class="card carta">
-            <div class="card-header">
-              <h4 class="titulo">Cuarta Foto</h4>
-              <button type="button" class="btn btn-link">12/14</button>
-            </div>
-            <img src="https://m1.paperblog.com/i/265/2652948/caracoles-que-fotos-tan-chulas-L-5I4aEG.jpeg"
-              class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">6288 Likes</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
-                interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="far fa-heart"></i>
-              </button>
-              <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </div>
-          </div>
-          <div class="card carta">
-            <div class="card-header">
-              <h4 class="titulo">Quinta Foto</h4>
-              <button type="button" class="btn btn-link">12/14</button>
-            </div>
-            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/dd/50/fc/caption.jpg?w=500&h=400&s=1"
-              class="card-img-top" alt="Imagen carta">
-
-            <div class="card-body">
-              <h5 class="card-title">7243 Likes</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
-                interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="far fa-heart"></i>
-              </button>
-              <input type="text" class="form-control comentario" id="recipient-name"
-                placeholder="Escriba un comentario...">
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </div>
-          </div>
-          <div class="card carta">
-            <div class="card-header">
-              <h4 class="titulo">Sexta Foto</h4>
-              <button type="button" class="btn btn-link">12/14</button>
-            </div>
-            <img
-              src="https://www.theimagen.com/wp-content/uploads/2020/03/the-imagen-reto-49-dia-nublado-santiago-caceres-rojo.jpg"
-              class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">2632 Likes</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
-                interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="far fa-heart"></i>
-              </button>
-              <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </div>
-          </div>
-          <div class="card carta">
-            <div class="card-header">
-              <h4 class="titulo">Septima Foto</h4>
-              <button type="button" class="btn btn-link">12/14</button>
-            </div>
-            <img src="http://misimagenesde.com/wp-content/uploads/2017/06/fotos-chulas-3.jpg" class="card-img-top"
-              alt="...">
-            <div class="card-body">
-              <h5 class="card-title">3987 Likes</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
-                interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="far fa-heart"></i>
-              </button>
-              <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </div>
-          </div>
-          <div class="card carta">
-            <div class="card-header">
-              <h4 class="titulo">Octava Foto</h4>
-              <button type="button" class="btn btn-link">12/14</button>
-            </div>
-            <img src="https://i.blogs.es/d268ef/tamanoimageniv/450_1000.jpg" class="card-img-top" alt="Imagen carta">
-
-            <div class="card-body">
-              <h5 class="card-title">4553 Likes</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
-                interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="far fa-heart"></i>
-              </button>
-              <input type="text" class="form-control comentario" id="recipient-name"
-                placeholder="Escriba un comentario...">
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </div>
-          </div>
-          <div class="card carta">
-            <div class="card-header">
-              <h4 class="titulo">Novena Foto</h4>
-              <button type="button" class="btn btn-link">12/14</button>
-            </div>
-            <img src="https://www.phototourbarcelona.com/wp-content/uploads/2019/10/7.jpg" class="card-img-top"
-              alt="...">
-            <div class="card-body">
-              <h5 class="card-title">6524 Likes</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
-                interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="far fa-heart"></i>
-              </button>
-              <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
-              <button type="button" class="btn btn-light btn-sm">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 px-1">
+              <img
+                src="https://cdn.slidesharecdn.com/ss_thumbnails/fotoschulas-100114072840-phpapp02-thumbnail-4.jpg?cb=1263454793"
+                class="w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
+              <img
+                src="https://www.theimagen.com/wp-content/uploads/2020/03/the-imagen-reto-49-dia-nublado-santiago-caceres-rojo.jpg"
+                class="w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
+              <img src="https://www.phototourbarcelona.com/wp-content/uploads/2019/10/7.jpg"
+                class="w-100 shadow-1-strong rounded mb-1 fotos-principales" alt="Boat on Calm Water" />
             </div>
           </div>
         </div>
+        <!-- grid "mosaico 9 fotos" -->
+        <!-- grid con muro -->
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="fondo">
+            <div class="card carta">
+              <div class="card-header">
+                <h4 class="titulo">Primera Foto</h4>
+                <button type="button" class="btn btn-link">12/14</button>
+              </div>
+              <img
+                src="https://blog.portfolionatural.com/wp-content/uploads/sites/210/2016/06/EIGG-vermell-Portfolio.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">2253 Likes</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
+                  interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="far fa-heart"></i>
+                </button>
+                <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card carta">
+              <div class="card-header">
+                <h4 class="titulo">Segunda Foto</h4>
+                <button type="button" class="btn btn-link">12/14</button>
+              </div>
+              <img src="http://28.media.tumblr.com/tumblr_kzkyi6ZVxz1qzwtdlo1_r1_500.png" class="card-img-top"
+                alt="Imagen carta">
+
+              <div class="card-body">
+                <h5 class="card-title">6122 Likes</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
+                  interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="far fa-heart"></i>
+                </button>
+                <input type="text" class="form-control comentario" id="recipient-name"
+                  placeholder="Escriba un comentario...">
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card carta">
+              <div class="card-header">
+                <h4 class="titulo">Tercera Foto</h4>
+                <button type="button" class="btn btn-link">12/14</button>
+              </div>
+              <img
+                src="https://cdn.slidesharecdn.com/ss_thumbnails/fotoschulas-100114072840-phpapp02-thumbnail-4.jpg?cb=1263454793"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">2727 Likes</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
+                  interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="far fa-heart"></i>
+                </button>
+                <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card carta">
+              <div class="card-header">
+                <h4 class="titulo">Cuarta Foto</h4>
+                <button type="button" class="btn btn-link">12/14</button>
+              </div>
+              <img src="https://m1.paperblog.com/i/265/2652948/caracoles-que-fotos-tan-chulas-L-5I4aEG.jpeg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">6288 Likes</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
+                  interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="far fa-heart"></i>
+                </button>
+                <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card carta">
+              <div class="card-header">
+                <h4 class="titulo">Quinta Foto</h4>
+                <button type="button" class="btn btn-link">12/14</button>
+              </div>
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/dd/50/fc/caption.jpg?w=500&h=400&s=1"
+                class="card-img-top" alt="Imagen carta">
+
+              <div class="card-body">
+                <h5 class="card-title">7243 Likes</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
+                  interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="far fa-heart"></i>
+                </button>
+                <input type="text" class="form-control comentario" id="recipient-name"
+                  placeholder="Escriba un comentario...">
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card carta">
+              <div class="card-header">
+                <h4 class="titulo">Sexta Foto</h4>
+                <button type="button" class="btn btn-link">12/14</button>
+              </div>
+              <img
+                src="https://www.theimagen.com/wp-content/uploads/2020/03/the-imagen-reto-49-dia-nublado-santiago-caceres-rojo.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">2632 Likes</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
+                  interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="far fa-heart"></i>
+                </button>
+                <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card carta">
+              <div class="card-header">
+                <h4 class="titulo">Septima Foto</h4>
+                <button type="button" class="btn btn-link">12/14</button>
+              </div>
+              <img src="http://misimagenesde.com/wp-content/uploads/2017/06/fotos-chulas-3.jpg" class="card-img-top"
+                alt="...">
+              <div class="card-body">
+                <h5 class="card-title">3987 Likes</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
+                  interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="far fa-heart"></i>
+                </button>
+                <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card carta">
+              <div class="card-header">
+                <h4 class="titulo">Octava Foto</h4>
+                <button type="button" class="btn btn-link">12/14</button>
+              </div>
+              <img src="https://i.blogs.es/d268ef/tamanoimageniv/450_1000.jpg" class="card-img-top" alt="Imagen carta">
+
+              <div class="card-body">
+                <h5 class="card-title">4553 Likes</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
+                  interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="far fa-heart"></i>
+                </button>
+                <input type="text" class="form-control comentario" id="recipient-name"
+                  placeholder="Escriba un comentario...">
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card carta">
+              <div class="card-header">
+                <h4 class="titulo">Novena Foto</h4>
+                <button type="button" class="btn btn-link">12/14</button>
+              </div>
+              <img src="https://www.phototourbarcelona.com/wp-content/uploads/2019/10/7.jpg" class="card-img-top"
+                alt="...">
+              <div class="card-body">
+                <h5 class="card-title">6524 Likes</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
+                  interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="far fa-heart"></i>
+                </button>
+                <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
+                <button type="button" class="btn btn-light btn-sm">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- grid con muro -->
       </div>
-      <!-- grid con muro -->
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"></script>
-</body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+      </body>
 
 </html>
-
